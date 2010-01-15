@@ -1,4 +1,8 @@
 %p.social
+  %a{ :href => "http://www.facebook.com/sharer.php?u=#{url_for(@page)}&t=#{@page.heading}", :title => "Share on Facebook" }
+    %img{ :src => "/facebook.png", :alt => "Share on Facebook" }
+  %a{ :href => "http://twitter.com/home?status=#{@page.heading} - #{url_for(@page)}", :title => "Share on Twitter" }
+    %img{ :src => "/twitter.png", :alt => "Share on Twitter" }
   %a{ :href => "http://delicious.com/post?url=#{url_for(@page)}&title=#{@page.heading}", :title => "Bookmark on delicious.com" }
     %img{ :src => "/delicious.png", :alt => "Bookmark on delicous.com" }
   %a{ :href => "http://digg.com/submit?phase=2&url=#{url_for(@page)}&title=#{@page.heading}", :title => "Digg it!" }
